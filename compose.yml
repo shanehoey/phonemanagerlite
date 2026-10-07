@@ -1,0 +1,9 @@
+services:
+  nextapp:
+    build: .
+    container_name: phonemanagerlite
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env.production
+    restart: unless-stopped
