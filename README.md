@@ -23,31 +23,22 @@ podman build -t phone-manager-lite .
 podman run -d -p 3000:3000 --name phone-manager-lite phone-manager-lite
 ```
 
-Open http://localhost:3000.
+Open http://<server-ip>:3000.
 
-## Advanced usage
-
-### Installation
-
-The app runs in a container (Podman or Docker). Build the image after the firmware and configuration files are in place, because both are served from `public/`.
-
-```bash
-podman build -t phone-manager-lite .
-podman run -d -p 3000:3000 --name phone-manager-lite phone-manager-lite
-```
-
-With Compose (requires a `.env.production` file in the project root):
-
-```bash
-podman compose up -d --build
-```
+## Local Development
 
 For local development:
 
 ```bash
+git clone https://github.com/shane/phonemanagerlite.git
+cd phonemanagerlite
+
 npm install
 npm run dev
 ```
+
+Open http://localhost:3000.
+
 
 ### Firmware
 
@@ -55,7 +46,7 @@ Download the firmware files for your phones and place them under `public/firmwar
 
 > The folder name in the code is `firmwarefiles`, not `firmware`. Use `public/firmwarefiles/`.
 
-### Default configuration files
+### Configuration files
 
 Create two default files and place them in `public/ipp/`:
 
@@ -83,11 +74,6 @@ management/telnet/enabled=1
 ```
 
 Additional `.cfg` files can be created and edited from the Configuration page.
-
-### Reference
-
-- Supported phones: AudioCodes; Yealink (soon); Poly (soon)
-- Features: view and manage phone configurations and firmware
 
 ## Contributing
 
