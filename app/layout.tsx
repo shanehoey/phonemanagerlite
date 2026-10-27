@@ -34,7 +34,7 @@ export default function RootLayout({
               <p className="text-sm lowercase tracking-[0.25em] text-zinc-500">phonemanager.shanehoey.dev</p>
               <h1 className="text-3xl font-semibold">Phone Manager lite</h1>
               <p className="text-sm text-zinc-500 dark:text-zinc-400">
-                Looking for instructions or a template? Head over to{" "}<a href="https://github.com/shanehoey/ip-phone-manager-lite#readme" className="font-medium text-zinc-950 dark:text-zinc-50">Github</a>.
+                Looking for instructions or a template? Head over to{" "}<a href="https://github.com/shanehoey/phonemanagerlite#readme" className="font-medium text-zinc-950 dark:text-zinc-50">Github</a>.
               </p>
               <section className="mt-10 flex flex-wrap gap-3">
                 <button className="flex min-w-[120px] items-center justify-center rounded-lg bg-green-700 px-3 py-2 text-green-100 hover:bg-green-500">

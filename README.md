@@ -33,6 +33,8 @@ For local development:
 git clone https://github.com/shane/phonemanagerlite.git
 cd phonemanagerlite
 
+npm npb-check-update -u
+
 npm install
 npm run dev
 ```
